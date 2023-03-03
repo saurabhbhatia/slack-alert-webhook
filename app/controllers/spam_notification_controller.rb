@@ -1,6 +1,6 @@
 class SpamNotificationController < ApplicationController
   def create
-    if params.dig("Type").eql?("SpamNotification")
+    if spam_notification
       PostMessageToSlackService.call(email: spam_email)
       render json: {message: "Span notification successful"}, status: :created
     else
@@ -10,5 +10,9 @@ class SpamNotificationController < ApplicationController
 
   def spam_email
     params.dig("Email")
+  end
+
+  def spam_notification
+    params.dig("Type").eql?("SpamNotification")
   end
 end
