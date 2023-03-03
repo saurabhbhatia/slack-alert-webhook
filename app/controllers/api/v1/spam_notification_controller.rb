@@ -1,4 +1,4 @@
-class SpamNotificationController < ApplicationController
+class Api::V1::SpamNotificationController < ApplicationController
   def create
     if spam_notification
       PostMessageToSlackService.call(email: spam_email)
