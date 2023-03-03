@@ -5,7 +5,7 @@
 - Ruby
 - Rails in API Only mode
 - Postgresql
-- (Slack App)[https://api.slack.com/apps/A04RU7S93BR]
+- [Slack App](https://api.slack.com/apps/A04RU7S93BR)
 - RSpec
 - Rubocop
 
