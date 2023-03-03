@@ -38,6 +38,11 @@ response -
 }
 ```
 
+### Demo
+
+https://user-images.githubusercontent.com/68931/222752844-8722365f-c389-4c8d-ad94-f1d28e9d13e1.mov
+
+
 ### Credentials
 
 This application makes use of Slack OAuth Token in order to communicate with Slack. I have generated a token and added it as a part of Rails credentials. Typically I generate a token per environment to keep the master.key safe for Production environments. However, for the sake of limiting time for this assignment, I have kept it simple. Please do the following once you have the master key to create or update the token -
