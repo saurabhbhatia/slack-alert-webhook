@@ -9,6 +9,34 @@
 - RSpec
 - Rubocop
 
+### API Doc
+
+POST /api/v1/slack_notification
+
+body -
+```
+{
+  "RecordType": "Bounce",
+  "Type": "SpamNotification",
+  "TypeCode": 512,
+  "Name": "Spam notification",
+  "Tag": "",
+  "MessageStream": "outbound",
+  "Description": "The message was delivered, but was either blocked by the user, or classified as spam, bulk mail, or had rejected content.",
+  "Email": "zaphod@example.com",
+  "From": "notifications@honeybadger.io",
+  "BouncedAt": "2023-02-27T21:41:30Z"
+}
+```
+
+response -
+
+```
+{
+  "message": "Span notification successful"
+}
+```
+
 ### Credentials
 
 This application makes use of Slack OAuth Token in order to communicate with Slack. I have generated a token and added it as a part of Rails credentials. Typically I generate a token per environment to keep the master.key safe for Production environments. However, for the sake of limiting time for this assignment, I have kept it simple. Please do the following once you have the master key to create or update the token -
