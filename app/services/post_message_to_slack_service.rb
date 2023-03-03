@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 class PostMessageToSlackService
   def self.call(email:)
     new(email).call
