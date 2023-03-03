@@ -14,6 +14,7 @@
 POST /api/v1/slack_notification
 
 body -
+
 ```
 {
   "RecordType": "Bounce",
